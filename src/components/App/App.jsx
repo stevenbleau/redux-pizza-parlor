@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
+import ScreenTwo from '../ScreenTwo/ScreenTwo.jsx';
+
 
 function App() {
 
@@ -12,6 +14,8 @@ function App() {
   
       <img src='images/pizza_photo.png' />
       <p>Pizza is great.</p>
+
+      <ScreenTwo/>
   
     </div>
   );
