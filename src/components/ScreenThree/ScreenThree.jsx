@@ -9,9 +9,11 @@ const checkout = () => {
     const dispatch = useDispatch();
     const history = useHistory();
     // all prevous data goes here:
+    const name = useSelector(store => store.name); // getter
+    const address = useSelector(store => store.address); // getter
+    const city = useSelector(store => store.city); // getter
+    const zip = useSelector(store => store.zip); // getter
 
-    // name 
-    //street
     // cost 
     // type of pizza
     //total
