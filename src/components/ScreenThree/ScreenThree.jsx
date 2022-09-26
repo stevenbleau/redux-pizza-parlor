@@ -21,11 +21,19 @@ const checkout = () => {
     const handleCheckout = () => {
         axios({
             method: 'POST',
+            url: '/api/order',
             data: {
-                //insert data here
+                    customer_name: customerName,
+                    street_address: streetAddress,
+                    city: city,
+                    zip: zipCode,
+                    type: getPizza,
+                    total: totalCost,
+                    pizzas: order,
             }
+            
         }).then((response) => {
-            //
+            alert('order placed! click button to star a new order')
             dispatch({type: 'CLEAR_ALL'});
             //history.push ('/')
         }).catch((error) => {
