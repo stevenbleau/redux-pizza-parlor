@@ -8,14 +8,23 @@ const checkout = () => {
     //call the previous data 
     const dispatch = useDispatch();
     const history = useHistory();
+
+    // all prevous data goes here:
+
     // all previous data goes here:
+
     const name = useSelector(store => store.name); // getter
     const address = useSelector(store => store.address); // getter
     const city = useSelector(store => store.city); // getter
     const zip = useSelector(store => store.zip); // getter
 
+
+    // cost 
+    // type of pizza
+
     //cost 
     //type of pizza
+
     //total
 
     const handleCheckout = () => {
@@ -28,7 +37,11 @@ const checkout = () => {
                     city: city,
                     zip: zipCode,
                     type: getPizza,
+
+                    total: totalCost,
+
                     //total: totalCost,
+
                     pizzas: order,
             }
             
@@ -52,11 +65,17 @@ const checkout = () => {
             {city}
             {zip}
 
+
+            {/* Total: {totalCost} */}
+
+
+
             Total:
         
 
 
         <button onClick={(handleCheckout)}>Checkout</button>
+
         </div>
         </>
     )
