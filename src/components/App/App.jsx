@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 import ScreenTwo from '../ScreenTwo/ScreenTwo.jsx';
+import ScreenThree from '../ScreenThree/ScreenThree.jsx';
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <p>Pizza is great.</p>
 
       <ScreenTwo/>
+      <ScreenThree/>
   
     </div>
   );
