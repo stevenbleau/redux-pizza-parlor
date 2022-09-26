@@ -53,9 +53,10 @@ const checkout = () => {
             {zip}
 
             Total:
+        
 
 
-        <button>Checkout</button>
+        <button onClick={(handleCheckout)}>Checkout</button>
         </div>
         </>
     )
