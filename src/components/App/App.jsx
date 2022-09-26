@@ -18,7 +18,11 @@ function App() {
       <p>Pizza is great.</p>
 
       <ScreenTwo/>
+<<<<<<< HEAD
+      
+=======
       <ScreenThree/>
+>>>>>>> 95ecc1b1a3129589609980f437756b066e72aae8
   
     </div>
   );
