@@ -46,6 +46,14 @@ const checkout = () => {
         <>
         <h3>Checkout</h3>
         <div>
+            Customer Info: 
+            {name}
+            {address}
+            {city}
+            {zip}
+
+            Total: {totalCost}
+
 
         <button>Checkout</button>
         </div>
